@@ -1,0 +1,50 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "plugin:@typescript-eslint/recommended", 
+      "prettier/@typescript-eslint", 
+      "plugin:prettier/recommended" 
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module" 
+    },
+    "rules": {
+        "no-constant-condition": [
+          "error",
+          {
+            "checkLoops": false
+          }
+        ],
+        "eqeqeq": "error",
+        "no-await-in-loop": "error",
+        "no-eval": "error",
+        "no-implied-eval": "error",
+        "prettier/prettier": [
+          "error",
+          {
+            "endOfLine": "auto"
+          }
+        ],
+        "no-magic-numbers": [
+          "error",
+          {
+            "ignore": [
+              -1,
+              0,
+              1
+            ]
+          }
+        ],
+        "no-new-wrappers": "error",
+        "@typescript-eslint/no-empty-function": 0,
+        "@typescript-eslint/no-var-requires": 0,
+        "@typescript-eslint/no-explicit-any": 0,
+        "@typescript-eslint/unbound-method": [
+          "error",
+          {
+            "ignoreStatic": true
+          }
+        ]
+      }
+  }
